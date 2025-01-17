@@ -21,8 +21,8 @@ API Development, Project Management, Process Improvement, Cloud Technologies, Ag
 
 ## EXPERIENCE
 
-**HOURWORK, INC.** | MAY 2022 - NOV 2023
-**Engineering Manager**
+**HOURWORK, INC.**  
+**Engineering Manager** | MAY 2022 - NOV 2023  
 
 *   Spearheaded the complete overhaul of the flagship product from conception to execution, managing a team of three engineers and successfully transitioning over 20,000 users to the new platform within 11 months.
 *   Oversaw the re-engineering of the product's data models, reducing average database query times by a factor of 200 and enabling the development of previously unfeasible features due to computational complexity.
@@ -31,8 +31,8 @@ API Development, Project Management, Process Improvement, Cloud Technologies, Ag
 *   Achieved a 85% reduction in customer-reported bugs within two months post-transition to the new system.
 *   Provided regular performance reviews and mentored team members, fostering a culture of continuous learning and growth.
 
-**BLUEMARK** | JUN 2021 - APR 2022
-**Lead Software Engineer**, Valencia, CA
+**BLUEMARK**  
+**Lead Software Engineer** | JUN 2021 - APR 2022  
 
 *   Developed a `RESTful API` for an e-commerce platform within an existing customer portal, using `Python`/`Flask` and `PostgreSQL` on `AWS` `EC2`. Supported front-end engineers using `React` and documented API specifications using `OpenAPI`.
 *   Collaborated with cross-functional teams to ensure alignment and effective communication throughout the rebuild process allowing features to be shipped weekly.
@@ -40,8 +40,8 @@ API Development, Project Management, Process Improvement, Cloud Technologies, Ag
 *   Reduced the number of bugs found in QA and staging environments by 70% by writing unit tests for the backend utilizing `pytest` and `Jest` for the front end.
 *   Utilized `SQLAlchemy` `ORM` to streamline Postgres database setup and reduce query overhead.
 
-**OPTRICITY CORP.** | JAN 2019 - JUN 2021
-**Director of Technology**
+**OPTRICITY CORP.**  
+**Director of Technology** | JAN 2019 - JUN 2021  
 
 *   Led the daily operations and personnel of the Development Team, growing the team from one to four members, including two Junior Developers and a Senior Developer. Oversaw the creation of all hiring, onboarding, and training processes.
 *   Reduced load times for large projects by 70% by re-architecting the flagship product's project loading process from `XML` files.
@@ -49,14 +49,14 @@ API Development, Project Management, Process Improvement, Cloud Technologies, Ag
 *   Integrated a `Python` scripting API within the `Java` product, enabling the addition of a regression testing step to the `CI/CD` pipeline and resulting in a 60% reduction in customer-reported bugs.
 *   Created and implemented a serverless-based portal system that allowed the Industrial Engineering and Client Solution teams the ability to conduct virtual training and other key client-business functions remotely via `Google Cloud App Engine` and `Firebase` `NoSQL` Database when in-person training was temporarily not possible.
 
-**Senior Software Engineer** | JAN 2018 - JAN 2019
+**Senior Software Engineer** | JAN 2018 - JAN 2019  
 
 *   Developed a quality control scanner authored in `Python`/`Flask` and `React` to review client data files for any errors, allowing the `CSV` file to be securely uploaded and get immediate feedback, before uploading the files to their project reducing the client success team's help desk tickets by 20%.
 *   Developed a web services API for the `Java` flagship product, enabling customers to connect their Warehouse Management System directly to the program and eliminating manual file uploads. Provided supporting documentation for client implementation and coordinated testing with a third-party partner.
 
 ## ADDITIONAL EXPERIENCE
 
-**Software Engineer**, Optricity Corp., Durham, NC | JAN 2016 - DEC 2018
+**Software Engineer**, Optricity Corp., Durham, NC | JAN 2016 - DEC 2018  
 **Code Coach**, theCoderSchool, Cary, NC | JAN 2017 - JUL 2017
 
 ## EDUCATION
