@@ -1,7 +1,6 @@
 # ALEXANDER ARRICO
 
-Brunswick, GA 
-(310) 740-5037 | alex.arrico@gmail.com
+Brunswick, GA | (310) 740-5037 | alex.arrico@gmail.com  
 [github.com/aarrico](https://github.com/aarrico) | [linkedin.com/in/aarrico](https://www.linkedin.com/in/aarrico)
 
 ## SUMMARY
