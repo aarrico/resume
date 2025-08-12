@@ -61,13 +61,16 @@ API Development, Project Management, Process Improvement, Cloud Technologies, Ag
 
 ## EDUCATION
 
-**UNIVERSITY OF TENNESSEE, KNOXVILLE, TN**
-Master of Science in Materials Science & Engineering
+**UNIVERSITY OF TENNESSEE, KNOXVILLE, TN**  
+Master of Science in Materials Science & Engineering  
+Thesis: Study of Thermodynamic Fragility and Chemical Order in a CuZr Metallic Glass from MD Simulation  
 
-**DUQUESNE UNIVERSITY, PITTSBURGH, PA**
-Bachelor of Science in Physics
-Bachelor of Arts in Computer Science
-Bachelor of Arts in Mathematics
+**DUQUESNE UNIVERSITY, PITTSBURGH, PA**  
+Bachelor of Science in Physics  
+Bachelor of Arts in Computer Science  
+Bachelor of Arts in Mathematics  
+Society of Physics Students President 2010-2012  
+
 
 ## LANGUAGES & PLATFORMS
 

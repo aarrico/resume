@@ -1,0 +1,134 @@
+{
+  "first_name": "Alexander",
+  "last_name": "Arrico",
+  "title": "Software Engineering Manager",
+  "location": "Brunswick, GA",
+  "phone": "(310) 740-5037",
+  "email": "alex@arrico.me",
+  "github": "github.com/aarrico",
+  "linkedin": "linkedin.com/in/aarrico",
+  "summary": "Hands-on engineering leader with over nine years of experience building and mentoring high-performing teams to deliver scalable, customer-centric software solutions. Proven success in architecting and developing robust applications with Node.js. React, and AWS, including a high-volume messaging service leveraging AWS Lambda that handles over 350,000 daily messages.",
+  "technical_proficiencies": {
+    "Backend": [
+      "Node.js",
+      "Python",
+      "Java",
+      "Go",
+      "Express.js",
+      "Flask",
+      "PostgreSQL",
+      "MongoDB",
+      "DynamoDB"
+    ],
+    "Frontend_Mobile": [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "HTML/CSS",
+      "Flutter"
+    ],
+    "Cloud_DevOps": [
+      "AWS (EC2, Lambda, SQS)",
+      "GCP",
+      "Docker",
+      "CI/CD",
+      "Terraform",
+      "GitHub Actions",
+      "DataDog"
+    ],
+    "APIs_Testing": [
+      "RESTful API Development",
+      "OpenAPI",
+      "Unit Testing",
+      "AAT",
+      "Postman"
+    ],
+    "Methodologies": [
+      "Agile/Scrum",
+      "Performance Optimization",
+      "Cloud Architecture",
+      "Technical Documentation"
+    ]
+  },
+  "accomplishments": [
+    "Led a cross-functional team of 5 (engineers, QA, and product) while contributing as an individual developer to rebuild a communication platform for hourly workers and their managers using Node.JS/React.JS, migrating 20,000 users to the new platform in under a year from a Java (Spring Boot) backend and no-code frontend.",
+    "Architected and developed the backend for a high-volume messaging service using Twilio and AWS (Lambdas, SQS) that processed over 350,000 outbound and 12,000 inbound messages daily, achieving near real-time interactions between hourly workers and managers.",
+    "Developed and implemented a Python scripting API within a Java desktop application, enabling customers to automate workflows and significantly reducing user in-app time by a factor of 30.",
+    "Founded Optricity Corp's first engineering team, establishing standard operating procedures based on Agile principles, resulting in a 65% increase in ticket completion rates and instilling a growth mindset in the junior engineers so we could always be building the best thing possible for the organization."
+  ],
+  "experience": [
+    {
+      "title": "Engineering Manager",
+      "company": "Hourwork, Inc.",
+      "date": "05.2022-11.2023",
+      "duties": [
+        "Spearheaded the complete overhaul of the flagship product, managing a team of three engineers and transitioning over 20,000 users to the new platform in 11 months.",
+        "Re-architected the product's Node.js backend and data models, optimizing performance by reducing average database query times by a factor of 200.",
+        "Revolutionized the development workflow by implementing robust engineering processes, enabling weekly feature releases.",
+        "Provided regular performance reviews and mentored team members."
+      ]
+    },
+    {
+      "title": "Lead Software Engineer",
+      "company": "BlueMark",
+      "date": "06.2021-04.2022",
+      "duties": [
+        "Developed a RESTful API for an e-commerce platform using Python/Flask and PostgreSQL on AWS EC2.",
+        "Reduced bugs in QA by 70% by implementing a robust unit testing and automated acceptance testing (AAT) framework with pytest and Jest."
+      ]
+    },
+    {
+      "title": "Director of Technology",
+      "company": "Optricity Corp.",
+      "date": "01.2019 - 01.2021",
+      "duties": [
+        "Grew the development team from one to four members, establishing all hiring and onboarding processes.",
+        "Reduced load times for large projects by 70% by re-architecting the flagship product's project loading process.",
+        "Integrated a Python scripting API within the Java product, resulting in a 60% reduction in customer-reported bugs."
+      ]
+    },
+    {
+      "title": "Software Engineer",
+      "company": "Optricity Corp.",
+      "date": "01.2016 - 01.2019",
+      "duties": [
+        "Developed a quality control scanner authored in Python/Flask and React to review client data files for any errors, reducing the client success team's help desk tickets by 20%.",
+        "Developed a web services API for the Java flagship product, enabling customers to connect their Warehouse Management System directly to the program and eliminating manual file uploads."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Science in Materials Science & Engineering",
+      "university": "University of Tennessee",
+      "date": "2012-2014",
+      "location": "Knoxville, TN"
+    },
+    {
+      "degree": "BS in Physics, BA in Computer Science, BA in Mathematics",
+      "university": "Duquesne University",
+      "date": "2008-2012",
+      "location": "Pittsburgh, PA"
+    }
+  ],
+  "personal_projects": [
+    {
+      "type": "Mobile App",
+      "title": "Macro Calculator",
+      "technologies": "Flutter",
+      "description": "Developing a mobile application in Flutter to calculate food quantities required to meet specific macronutrient goals for meal planning."
+    },
+    {
+      "type": "Mobile App",
+      "title": "Personal Trainer Study Helper",
+      "technologies": "React Native",
+      "description": "Built a mobile study aid using React Native to prepare for personal trainer certification, featuring flashcards and quizzes to reinforce learning."
+    }
+  ],
+  "hobbies": [
+    "Pokémon Master",
+    "Bodybuilding",
+    "Expert Cinnamon Roll Baker",
+    "Pug Dad"
+  ]
+}
