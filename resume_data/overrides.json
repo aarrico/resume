@@ -1,0 +1,10 @@
+[
+  {
+    "company": "cedar",
+    "job_title": " sr software engineer",
+    "job_url": "https://www.cedar.com/careers/job/12345",
+    "overrides": {
+      "summary": "This is a custom summary."
+    }
+  }
+]

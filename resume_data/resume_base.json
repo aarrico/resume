@@ -9,7 +9,7 @@
   "linkedin": "linkedin.com/in/aarrico",
   "summary": "Hands-on engineering leader with over nine years of experience building and mentoring high-performing teams to deliver scalable, customer-centric software solutions. Proven success in architecting and developing robust applications with Node.js. React, and AWS, including a high-volume messaging service leveraging AWS Lambda that handles over 350,000 daily messages.",
   "technical_proficiencies": {
-    "Backend": [
+    "backend": [
       "Node.js",
       "Python",
       "Java",
@@ -20,14 +20,14 @@
       "MongoDB",
       "DynamoDB"
     ],
-    "Frontend_Mobile": [
+    "frontend_mobile": [
       "React",
       "JavaScript",
       "TypeScript",
       "HTML/CSS",
       "Flutter"
     ],
-    "Cloud_DevOps": [
+    "cloud_devops": [
       "AWS (EC2, Lambda, SQS)",
       "GCP",
       "Docker",
@@ -36,14 +36,14 @@
       "GitHub Actions",
       "DataDog"
     ],
-    "APIs_Testing": [
+    "apis_testing": [
       "RESTful API Development",
       "OpenAPI",
       "Unit Testing",
       "AAT",
       "Postman"
     ],
-    "Methodologies": [
+    "methodologies": [
       "Agile/Scrum",
       "Performance Optimization",
       "Cloud Architecture",
@@ -54,7 +54,7 @@
     "Led a cross-functional team of 5 (engineers, QA, and product) while contributing as an individual developer to rebuild a communication platform for hourly workers and their managers using Node.JS/React.JS, migrating 20,000 users to the new platform in under a year from a Java (Spring Boot) backend and no-code frontend.",
     "Architected and developed the backend for a high-volume messaging service using Twilio and AWS (Lambdas, SQS) that processed over 350,000 outbound and 12,000 inbound messages daily, achieving near real-time interactions between hourly workers and managers.",
     "Developed and implemented a Python scripting API within a Java desktop application, enabling customers to automate workflows and significantly reducing user in-app time by a factor of 30.",
-    "Founded Optricity Corp's first engineering team, establishing standard operating procedures based on Agile principles, resulting in a 65% increase in ticket completion rates and instilling a growth mindset in the junior engineers so we could always be building the best thing possible for the organization."
+    "Founded Optricity Corp's first engineering team, establishing standard operating procedures based on Agile principles, resulting in a 65\\% increase in ticket completion rates and instilling a growth mindset in the junior engineers so we could always be building the best thing possible for the organization."
   ],
   "experience": [
     {
@@ -74,7 +74,7 @@
       "date": "06.2021-04.2022",
       "duties": [
         "Developed a RESTful API for an e-commerce platform using Python/Flask and PostgreSQL on AWS EC2.",
-        "Reduced bugs in QA by 70% by implementing a robust unit testing and automated acceptance testing (AAT) framework with pytest and Jest."
+        "Reduced bugs in QA by 70\\% by implementing a robust unit testing and automated acceptance testing (AAT) framework with pytest and Jest."
       ]
     },
     {
@@ -83,8 +83,8 @@
       "date": "01.2019 - 01.2021",
       "duties": [
         "Grew the development team from one to four members, establishing all hiring and onboarding processes.",
-        "Reduced load times for large projects by 70% by re-architecting the flagship product's project loading process.",
-        "Integrated a Python scripting API within the Java product, resulting in a 60% reduction in customer-reported bugs."
+        "Reduced load times for large projects by 70\\% by re-architecting the flagship product's project loading process.",
+        "Integrated a Python scripting API within the Java product, resulting in a 60\\% reduction in customer-reported bugs."
       ]
     },
     {
@@ -92,14 +92,14 @@
       "company": "Optricity Corp.",
       "date": "01.2016 - 01.2019",
       "duties": [
-        "Developed a quality control scanner authored in Python/Flask and React to review client data files for any errors, reducing the client success team's help desk tickets by 20%.",
+        "Developed a quality control scanner authored in Python/Flask and React to review client data files for any errors, reducing the client success team's help desk tickets by 20\\%.",
         "Developed a web services API for the Java flagship product, enabling customers to connect their Warehouse Management System directly to the program and eliminating manual file uploads."
       ]
     }
   ],
   "education": [
     {
-      "degree": "Master of Science in Materials Science & Engineering",
+      "degree": "Master of Science in Materials Science and Engineering",
       "university": "University of Tennessee",
       "date": "2012-2014",
       "location": "Knoxville, TN"
