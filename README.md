@@ -1,10 +1,7 @@
-# Resume Repo
+# Resume Source of Truth
 
 Canonical source for my resume. `resume.yaml` is the only file edited by hand — the PDF and the
 portfolio site's copy are both generated from it.
-
-Design notes and the rationale behind the content decisions live in
-[docs/superpowers/specs/2026-07-31-resume-pipeline-design.md](docs/superpowers/specs/2026-07-31-resume-pipeline-design.md).
 
 ## Setup
 
