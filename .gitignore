@@ -1,6 +1,11 @@
 venv
+.venv
 .idea
+__pycache__/
 
-*.aux
-*.log
-*.out
+out/
+
+.agents/
+.claude/
+skills-lock.json
+docs/

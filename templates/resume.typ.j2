@@ -1,0 +1,97 @@
+// Generated from resume.yaml by src/build.py -- do not edit the rendered .typ.
+//
+// ATS constraints this layout deliberately respects:
+//   - single column, no tables, no images
+//   - contact details in the body flow, never a page header
+//   - standard section headings
+//   - horizontal positioning via #h(1fr) inside a paragraph rather than a grid,
+//     so PDF text extraction order is guaranteed left-to-right
+
+#set document(title: "{{ basics.name }} - Resume", author: "{{ basics.name }}")
+#set page(paper: "us-letter", margin: (x: 0.55in, top: 0.5in, bottom: 0.55in))
+#set text(
+  font: ("IBM Plex Sans", "Liberation Sans", "Arial", "Helvetica"),
+  size: 10.5pt,
+  lang: "en",
+)
+// every other size below is em-relative to the base above -- change one number to rescale
+#set par(leading: 0.62em, spacing: 0.7em, justify: false)
+#set list(marker: [•], indent: 0.5em, body-indent: 0.45em, spacing: 0.5em)
+
+#let section(title) = {
+  v(0.55em)
+  text(size: 1.07em, weight: "bold", tracking: 0.06em, upper(title))
+  v(-0.25em)
+  line(length: 100%, stroke: 0.7pt)
+  v(-0.15em)
+}
+
+#align(center)[
+  #text(size: 1.84em, weight: "bold", tracking: 0.08em)[{{ basics.name | upper | typst }}] \
+  #text(size: 1.07em)[{{ basics.title | typst }}] \
+  #text(size: 0.92em)[{{ basics.location | typst }} #sym.dot.c {{ basics.email | typst }} #sym.dot.c {{ basics.phone | typst }}] \
+  #text(size: 0.92em)[
+    #link("{{ basics.links.website }}")[{{ basics.links.website | replace("https://", "") | typst }}]
+    #sym.dot.c
+    #link("{{ basics.links.linkedin }}")[{{ basics.links.linkedin | replace("https://", "") | typst }}]
+    #sym.dot.c
+    #link("{{ basics.links.github }}")[{{ basics.links.github | replace("https://", "") | typst }}]
+  ]
+]
+
+#section("Professional Summary")
+{{ summary | typst }}
+
+#section("Technical Skills")
+#[
+  #set par(spacing: 0.4em)
+{% for group in skills %}
+  {# group["items"], not group.items -- the latter resolves to dict.items #}
+  *{{ group.category | typst }}:* {{ group["items"] | map("typst") | join(", ") }}
+
+{% endfor %}
+]
+
+#section("Professional Experience")
+{% for job in experience %}
+{# header, lede and first bullet share one unbreakable block so a page break
+   can never strand the role heading from its content #}
+#block(breakable: false, above: 0.75em, below: 0.5em)[
+  *{{ job.role | typst }}* | {{ job.company | typst }} ({{ job.location | typst }}) #h(1fr) #text(style: "italic", size: 0.92em)[{{ job.start | month }} -- {{ job.end | month }}]
+{% if job.lede %}
+
+  #text(style: "italic")[{{ job.lede | typst }}]
+{% endif %}
+{% if job.bullets %}
+
+  - {{ job.bullets[0] | typst }}
+{% endif %}
+]
+{% for bullet in job.bullets[1:] %}
+- {{ bullet | typst }}
+{% endfor %}
+
+{% endfor %}
+{% if projects %}
+#section("Projects")
+{% for project in projects %}
+#block(breakable: false, above: 0.75em, below: 0.5em)[
+  *{{ project.name | typst }}* | {{ project.tagline | typst }}{% if project.link %} #h(1fr) #text(size: 0.92em)[#link("https://{{ project.link }}")[{{ project.link | typst }}]]{% endif %}
+  #parbreak()
+  #text(style: "italic", size: 0.92em)[{{ project.stack | map("typst") | join(", ") }}]
+{% if project.bullets %}
+
+  - {{ project.bullets[0] | typst }}
+{% endif %}
+]
+{% for bullet in project.bullets[1:] %}
+- {{ bullet | typst }}
+{% endfor %}
+
+{% endfor %}
+{% endif %}
+#section("Education")
+{% for edu in education %}
+*{{ edu.degree | typst }}*, {{ edu.school | typst }} #h(1fr) #text(size: 0.92em)[{{ edu.start[:4] }} -- {{ edu.end[:4] }}]
+
+{% endfor %}
