@@ -1,45 +1,47 @@
-# Resume Source of Truth
+# Resume
 
-Canonical source for my resume. `resume.yaml` is the only file edited by hand — the PDF and the
-portfolio site's copy are both generated from it.
+My resume lives in [`resume.yaml`](resume.yaml). A small Python build validates the data, renders a single-column Typst layout, and produces a PDF. The same data can also update my portfolio's resume JSON and PDF, so I don't have to maintain three copies of the content.
 
-## Setup
+## Build the PDF
+
+You need Python 3.11+, [uv](https://docs.astral.sh/uv/), and Typst on your `PATH`.
 
 ```sh
 uv sync
+uv run src/build.py
 ```
 
-Typst does the typesetting, and the template targets an Arial-compatible font:
+The result is `out/Alexander_Arrico_Resume.pdf`. Generated files in `out/` are ignored by Git. The template prefers IBM Plex Sans, Liberation Sans, Arial, or Helvetica. Use `typst fonts` to check what's installed, and inspect the PDF for font substitutions.
+
+## Edit the resume
+
+Edit `resume.yaml`, then rebuild and review the PDF. The file contains the contact details, summary, skills, experience, projects, and education used by the template. Dates use `YYYY-MM`; `end: null` means a current role.
+
+For a job-specific version, create `tailored/<slug>.yaml` with only the fields you want to override, then run:
 
 ```sh
-sudo pacman -S typst ttf-liberation   # Arch / CachyOS
-brew install typst                    # macOS — Arial and Helvetica ship with the OS
+uv run src/build.py --tailored acme
 ```
 
-## Usage
+That writes the PDF under `out/acme/`. Tailored files are deep-merged with `resume.yaml`: nested mappings merge, while lists such as experience and skills replace the entire base list. Review tailored files before committing them.
+
+## Update the portfolio
+
+With the portfolio checkout next to this repo at `../portfolio`, run:
 
 ```sh
-uv run src/build.py                  # -> out/Alexander_Arrico_Resume.pdf
-uv run src/build.py --sync           # also updates ../portfolio
-uv run src/build.py --tailored acme  # -> out/acme/
+uv run src/build.py --sync
 ```
 
-`--sync` writes `../portfolio/data/resume.json` (phone stripped) and `../portfolio/public/resume.pdf`.
+This writes `../portfolio/data/resume.json` and `../portfolio/public/resume.pdf`. The JSON omits the phone number; the PDF uses the contact details in `resume.yaml`. Tailored resumes cannot be synced.
 
-Tailored resumes live in `tailored/<slug>.yaml` and deep-merge over `resume.yaml`. `--sync`
-refuses to run with `--tailored`, so a resume written for one application can't reach the
-public site.
+## Repo map
 
-## Layout
-
-```
-resume.yaml              canonical data
-tailored/<slug>.yaml     per-application overrides, never synced
-templates/resume.typ.j2  ATS-oriented Typst layout
-src/
-  build.py               entrypoint
-  model.py               pydantic schema + YAML loading + deep merge
-  render.py              Typst escaping, date formatting, compile
-  sync.py                portfolio artifacts
-out/                     generated, gitignored
-```
+| Path | Purpose |
+| --- | --- |
+| `resume.yaml` | Base resume content |
+| `tailored/<slug>.yaml` | Optional job-specific overrides |
+| `src/model.py` | YAML loading and validation |
+| `src/render.py` | Typst rendering and PDF compilation |
+| `src/sync.py` | Portfolio output |
+| `templates/resume.typ.j2` | PDF layout |

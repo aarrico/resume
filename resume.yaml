@@ -3,7 +3,6 @@
 #   uv run src/build.py           -> out/Alexander_Arrico_Resume.pdf
 #   uv run src/build.py --sync    -> also updates ../portfolio
 #
-# `phone` is deliberately never synced to the portfolio.
 # Dates are quoted YYYY-MM. `end: null` means present.
 
 basics:
@@ -19,12 +18,11 @@ basics:
     github: https://github.com/aarrico
 
 summary: >-
-  Senior software engineer with 10+ years on production backend systems in Python,
-  Node.js/TypeScript, and Java. Most of that work is distributed and event-driven: moving legacy
-  monoliths onto AWS, and designing the APIs and data models underneath. Migrated 20,000+ users
-  off a Java monolith to Node.js microservices with zero customer data loss, cut PostgreSQL query
-  latency from seconds to tens of milliseconds, and built a serverless messaging pipeline on AWS
-  Lambda and SQS carrying 350,000+ outbound and 12,000 inbound messages daily.
+  Senior software engineer with 10+ years modernizing production backends that have to stay online
+  while they change. Led a Java-to-Node.js migration of 20,000+ users without data loss or
+  full-service outages, and designed AWS messaging that handles 350,000+ outbound messages daily.
+  Former engineering manager who remains hands-on with architecture, code, and production operations
+  across Python, TypeScript, Java, and AWS.
 
 # Every item below traces to a bullet or project. Ten unevidenced claims were cut on 2026-07-31:
 # Go, Kubernetes, Terraform, Nginx, Django, WebSockets, OAuth/JWT, RabbitMQ, pandas, DynamoDB.
@@ -98,7 +96,7 @@ experience:
   - company: Freelance
     role: Software Consultant
     location: Remote
-    start: "2024-06"
+    start: "2023-11"
     end: "2026-05"
     lede: >-
       Sole engineer on a client's Discord community platform, owning architecture, deployment, and
@@ -119,7 +117,7 @@ experience:
 
   - company: Hourwork, Inc.
     role: Engineering Manager
-    location: Remote
+    location: Boston, MA
     start: "2022-05"
     end: "2023-11"
     # This lede is load-bearing: it answers the "did you stop coding?" objection
@@ -149,7 +147,7 @@ experience:
 
   - company: BlueMark
     role: Lead Software Engineer
-    location: Remote
+    location: Valencia, CA
     start: "2021-06"
     end: "2022-04"
     lede: >-
