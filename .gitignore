@@ -4,8 +4,4 @@ venv
 __pycache__/
 
 out/
-
-.agents/
-.claude/
-skills-lock.json
-docs/
+tailored/

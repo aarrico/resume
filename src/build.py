@@ -12,7 +12,9 @@ PORTFOLIO = ROOT.parent / "portfolio"
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Build a PDF resume from resume.yaml.")
+    parser = argparse.ArgumentParser(
+        prog="build", description="Build a PDF resume from resume.yaml."
+    )
     parser.add_argument(
         "--tailored",
         metavar="SLUG",
